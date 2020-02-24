@@ -13,88 +13,91 @@ printf("Vous voyagez et decouvrez une ville campagnarde fantome. \n" );
 printf("Vous decidez de trouver de quoi vous sustenter dans une maison proche. \n" );
 
 printf("Une fois a l interieur, vous vous dirigez vers la cuisine.\n");
-printf("\nChoisissez ce que vous voulez fouiller :\n\nTapez 1 pour fouiller un placard.\nTapez 2 pour fouiller le frigo.\nTapez 3 pour quitter la cuisine");
+printf("\nChoisissez ce que vous voulez fouiller :\n\nTapez 1 pour fouiller un placard.\nTapez 2 pour fouiller le frigo.\nTapez 3 pour quitter la cuisine\n\n");
 
 scanf("\n%d",&choix);
 
-if(choix == 1){
-	
-	choix = 0;
-	
-	printf("\n\nVous fouillez un placard. Vous trouvez des pates, des conserves ainsi que des allumettes.\n");
-	printf("Souhaitez-vous prendre les objets ?\n\n Oui = 1\n Non = 2\n");
-	
-	scanf("\n%d",&choix);
-	
 	if(choix == 1){
-		
-		printf("\nVous avez pris les objets.\n");
 		
 		choix = 0;
 		
-		printf("\nQue voulez-vous faire maintenant ?\n\n1 = vous regardez ce qu'il y a dans le frigo\n2 = Vous quittez la cuisine.\n\n");
+		printf("\n\nVous fouillez un placard. Vous trouvez des pates, des conserves ainsi que des allumettes.\n");
+		printf("Souhaitez-vous prendre les objets ?\n\n Oui = 1\n Non = 2\n");
 		
 		scanf("\n%d",&choix);
 		
 		if(choix == 1){
 			
-			printf("Vous fouillez le frigo.\nLe frigo est compose d'aliments ayant l'air perime, ça ne vous tente pas trop de prendre ce risque.\nVous quittez la cuisine et vous dirigez vers le salon.\n");
+			printf("\nVous avez pris les objets.\n");
 			
 			choix = 0;
-		
+			
+			printf("\nQue voulez-vous faire maintenant ?\n\n1 = vous regardez ce qu'il y a dans le frigo\n2 = Vous quittez la cuisine.\n\n");
+			
+			scanf("\n%d",&choix);
+			
+			if(choix == 1){
+				
+				printf("Vous fouillez le frigo.\nLe frigo est compose d'aliments ayant l'air perime, ca ne vous tente pas trop de prendre ce risque.\nVous quittez la cuisine et vous dirigez vers le salon.\n");
+				
+				choix = 0;
+			
+			}
+			else if(choix == 2){
+				
+				printf("Vous quittez la cuisine et vous dirigez vers le salon.\n");
+				
+				choix = 0;
+			}
+			
+			
 		}
 		else if(choix == 2){
 			
-			printf("Vous quittez la cuisine et vous dirigez vers le salon.\n");
+			printf("Vous fouillez le frigo.\nLe frigo est compose d'aliments ayant l'air perime, ça ne vous tente pas trop de prendre ce risque.\n");
 			
-			choix = 0;
-		}
-		
-		
-	}
-	else if(choix == 2){
-		
-		printf("Vous fouillez le frigo.\nLe frigo est compose d'aliments ayant l'air perime, ça ne vous tente pas trop de prendre ce risque.\n");
-		
-		printf("Souhaitez-vous maintenant fouiller les placards ou quittez la cuisine ?\n  1 = fouiller\n2 = quitter la cuisine.\n\n");
-		
-		
-		scanf("%d",&choix);
-		
-		if(choix == 1){
+			printf("Souhaitez-vous maintenant fouiller les placards ou quittez la cuisine ?\n  1 = fouiller\n2 = quitter la cuisine.\n\n");
 			
-			printf("Vous fouillez les placards. Vous trouvez des pates, des conserves et des allumettes. Souhaitez vous les prendre ?\n\n1 = Oui\n2 = Non\n\n");
-
-			choix = 0;
 			
 			scanf("%d",&choix);
 			
 			if(choix == 1){
 				
-				printf("Vous prenez les objets, quittez la cuisine et vous dirigez vers le salon.\n");
-				
+				printf("Vous fouillez les placards. Vous trouvez des pates, des conserves et des allumettes. Souhaitez vous les prendre ?\n\n1 = Oui\n2 = Non\n\n");
+
 				choix = 0;
-			}
+				
+				scanf("%d",&choix);
+				
+				if(choix == 1){
+					
+					printf("Vous prenez les objets, quittez la cuisine et vous dirigez vers le salon.\n");
+					
+					choix = 0;
+				}
+				else if(choix == 2){
+					
+					printf("vous quittez la cuisine et vous dirigez vers le salon.\n");
+					
+					choix = 0;
+				}
+			
 			else if(choix == 2){
 				
-				printf("vous quittez la cuisine et vous dirigez vers le salon.\n");
+				printf("\nVous quittez la cuisine et vous dirigez vers le salon.");
 				
 				choix = 0;
+				}
 			}
-		
-		else if(choix == 2){
-			
-			printf("\nVous quittez la cuisine et vous dirigez vers le salon.");
-			
-			choix = 0;
 		}
 	}
-		
+}		
 
 
 
-printf("Vous trouvez un coffre a jouet en plien millieu du salon sur une table. Il y a peut-etre quelque chose dedans. \n" );
+printf("\n\nVous trouvez un coffre a jouet en plein milieu du salon sur une table. Il y a peut-etre quelque chose dedans. \n" );
 
+/*
 printf("je pensse qu il y a peut etre un piege qui va me trucider en louvrant je dervai mabstenir \n" );
 printf("je tente ma chance et puis de toute fasson il faut bien mourire de quelque chose \n" );
 
@@ -216,7 +219,10 @@ printf("vous sortez votre couteau vous tuez deux zombie vous les aurait emportez
 
 
     return 0;
-}
+} 
+*/
+
+
 /*  										Histoire et déroulement du jeu :
 
 Le monde est sur sa fin. Vous êtes un survivant d'une maladie rare qui a touché la population terrestre.
@@ -246,4 +252,4 @@ Fin du jeu.
 
 
 
-}
+
