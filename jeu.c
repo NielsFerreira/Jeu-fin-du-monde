@@ -91,12 +91,13 @@ scanf("\n%d",&choix);
 			}
 		}
 	}
-}		
+	
 
 
 
 printf("\n\nVous trouvez un coffre a jouet en plein milieu du salon sur une table. Il y a peut-etre quelque chose dedans. \n" );
 
+}
 /*
 printf("je pensse qu il y a peut etre un piege qui va me trucider en louvrant je dervai mabstenir \n" );
 printf("je tente ma chance et puis de toute fasson il faut bien mourire de quelque chose \n" );
